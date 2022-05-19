@@ -1,0 +1,59 @@
+.containerr {
+  background-color: white;
+  /*FOOTER*/ }
+  .containerr header {
+    grid-area: header; }
+  .containerr main {
+    grid-area: main; }
+    .containerr main div h1 {
+      margin-top: 1%;
+      text-align: center; }
+    .containerr main div h2 {
+      padding: 1%; }
+    .containerr main div p {
+      padding: 1%; }
+  .containerr .logos div {
+    width: auto;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    gap: 10px; }
+  .containerr .fa-brands {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; }
+  .containerr .fa-facebook-f {
+    background: white;
+    color: black; }
+  .containerr .fa-instagram {
+    background: white;
+    color: black; }
+  .containerr .fa-whatsapp {
+    background: white;
+    color: black; }
+  .containerr .fa-tiktok {
+    background: white;
+    color: #0f0e0e; }
+  .containerr .fa-snapchat {
+    background: white;
+    color: black; }
+  .containerr .list-unstyled p {
+    margin-bottom: 1px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.containerr {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  grid-template-areas: "header" "main" "footer"; }

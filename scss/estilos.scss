@@ -1,0 +1,85 @@
+.containerr{
+    background-color: white;
+    header{
+        grid-area: header;
+        
+    }
+
+    main{
+        grid-area: main;
+        
+        div{
+            
+            h1{
+                margin-top: 1%;
+                text-align: center;
+            }
+            h2{
+                padding: 1%;
+            }
+            p{
+                padding: 1%;
+            }
+        }
+    }
+
+    /*FOOTER*/
+
+    .logos div{
+        width: auto;
+        height: 50px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        gap: 10px;
+        
+        
+    
+    }
+
+
+
+    .fa-brands{
+        padding: 5px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center ;
+        text-decoration: none;
+        border-radius: 50%;
+        
+    }
+
+    .fa-facebook-f {
+        background: white;
+        color: black;
+    }
+
+    .fa-instagram {
+        background: white;
+        color: black;
+    }
+
+    .fa-whatsapp {
+        background: white;
+        color: black;
+    }
+
+    .fa-tiktok {
+        background: white;
+        color: rgb(15, 14, 14);
+    }
+
+    .fa-snapchat {
+        background:white;
+        color: black;
+        
+    }
+
+
+    .list-unstyled p{
+        margin-bottom: 1px;
+    }
+}
+@import "layout/grids.scss" ;
