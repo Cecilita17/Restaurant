@@ -3,12 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-.containerr{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2.6fr 0.2fr;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-}

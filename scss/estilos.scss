@@ -1,85 +1,100 @@
-.containerr{
+.container-fluid{
     background-color: white;
+    font-family: 'Indie Flower', cursive;
+    
     header{
-        grid-area: header;
+        nav{
+            background-color: bisque;
+        }
+        
         
     }
 
     main{
-        grid-area: main;
-        
-        div{
-            
+        background-color: rgb(247, 238, 225);
+        .titulo{
             h1{
-                margin-top: 1%;
-                text-align: center;
+                font-weight: 700;
             }
             h2{
-                padding: 1%;
+                font-weight: 700;
             }
-            p{
-                padding: 1%;
+        }
+        div{
+            h2{
+                font-weight: 500;
+            }
+            h3{
+                font-weight: 500;
+            }
+            h4{
+                font-weight: 500;
             }
         }
     }
 
     /*FOOTER*/
-
-    .logos div{
-        width: auto;
-        height: 50px;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: none;
-        gap: 10px;
+    footer{
+        background-color: bisque;
+        .logos div{
+            width: auto;
+            height: 50px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: none;
+            gap: 10px;
+            
+            
         
-        
+        }
     
+        h5{
+            font-weight: 700;
+        }
+    
+        .fa-brands{
+            padding: 5px;
+            font-size: 20px;
+            width: 30px;
+            text-align: center ;
+            text-decoration: none;
+            border-radius: 50%;
+            
+        }
+    
+        .fa-facebook-f {
+            background: white;
+            color: black;
+        }
+    
+        .fa-instagram {
+            background: white;
+            color: black;
+        }
+    
+        .fa-whatsapp {
+            background: white;
+            color: black;
+        }
+    
+        .fa-tiktok {
+            background: white;
+            color: rgb(15, 14, 14);
+        }
+    
+        .fa-snapchat {
+            background:white;
+            color: black;
+            
+        }
+    
+    
+        .list-unstyled p{
+            margin-bottom: 1px;
+        }
     }
-
-
-
-    .fa-brands{
-        padding: 5px;
-        font-size: 20px;
-        width: 30px;
-        text-align: center ;
-        text-decoration: none;
-        border-radius: 50%;
-        
-    }
-
-    .fa-facebook-f {
-        background: white;
-        color: black;
-    }
-
-    .fa-instagram {
-        background: white;
-        color: black;
-    }
-
-    .fa-whatsapp {
-        background: white;
-        color: black;
-    }
-
-    .fa-tiktok {
-        background: white;
-        color: rgb(15, 14, 14);
-    }
-
-    .fa-snapchat {
-        background:white;
-        color: black;
-        
-    }
-
-
-    .list-unstyled p{
-        margin-bottom: 1px;
-    }
+    
 }
 @import "layout/grids.scss" ;
