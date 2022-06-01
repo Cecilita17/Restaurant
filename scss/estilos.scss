@@ -12,16 +12,29 @@
 
     main{
         background-color: $color-gold;
+        
         .titulo{
             h1{
+                text-shadow: $text-shadow;
+                font-size: 3.5rem;
                 font-weight: 700;
+                color: $color-rojizo;
             }
             h2{
+                text-shadow: $text-shadow;
+                font-size: 2rem;
                 font-weight: 700;
+                color: $color-rojizo;
+            }
+            p{
+                color: $color-ivory;
+                font-size: 18px;
+                text-shadow: $text-shadow-p;
             }
         }
         div{
             div{
+                
                 .card-color{
                     background-color: $color-ivory;
                 }

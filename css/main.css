@@ -6,9 +6,19 @@
   .container-fluid main {
     background-color: #FFCE45; }
     .container-fluid main .titulo h1 {
-      font-weight: 700; }
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #BB371A; }
     .container-fluid main .titulo h2 {
-      font-weight: 700; }
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #BB371A; }
+    .container-fluid main .titulo p {
+      color: #FFF8D9;
+      font-size: 18px;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
     .container-fluid main div div .card-color {
       background-color: #FFF8D9; }
     .container-fluid main div div h2 {
