@@ -1,23 +1,26 @@
 .container-fluid {
-  background-color: white;
   font-family: 'Indie Flower', cursive;
   /*FOOTER*/ }
   .container-fluid header nav {
-    background-color: bisque; }
+    background-color: #BB371A; }
   .container-fluid main {
-    background-color: #f7eee1; }
+    background-color: #FFCE45; }
     .container-fluid main .titulo h1 {
       font-weight: 700; }
     .container-fluid main .titulo h2 {
       font-weight: 700; }
-    .container-fluid main div h2 {
+    .container-fluid main div div .card-color {
+      background-color: #FFF8D9; }
+    .container-fluid main div div h2 {
       font-weight: 500; }
-    .container-fluid main div h3 {
+    .container-fluid main div div h3 {
       font-weight: 500; }
-    .container-fluid main div h4 {
+    .container-fluid main div div h4 {
       font-weight: 500; }
+    .container-fluid main div div .boton {
+      background-color: #BB371A !important; }
   .container-fluid footer {
-    background-color: bisque; }
+    background-color: #BB371A; }
     .container-fluid footer .logos div {
       width: auto;
       height: 50px;

@@ -1,17 +1,17 @@
-.container-fluid{
-    background-color: white;
+@import "utilities/variables";
+
+.container-fluid {
+    
     font-family: 'Indie Flower', cursive;
     
     header{
         nav{
-            background-color: bisque;
+            background-color: $color-rojizo;
         }
-        
-        
     }
 
     main{
-        background-color: rgb(247, 238, 225);
+        background-color: $color-gold;
         .titulo{
             h1{
                 font-weight: 700;
@@ -21,21 +21,29 @@
             }
         }
         div{
-            h2{
-                font-weight: 500;
-            }
-            h3{
-                font-weight: 500;
-            }
-            h4{
-                font-weight: 500;
+            div{
+                .card-color{
+                    background-color: $color-ivory;
+                }
+                h2{
+                    font-weight: 500;
+                }
+                h3{
+                    font-weight: 500;
+                }
+                h4{
+                    font-weight: 500;
+                }
+                .boton{
+                    background-color: $color-rojizo !important;
+                }
             }
         }
     }
 
     /*FOOTER*/
     footer{
-        background-color: bisque;
+        background-color: $color-rojizo;
         .logos div{
             width: auto;
             height: 50px;
