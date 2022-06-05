@@ -6,28 +6,33 @@
     
     header{
         nav{
-            background-color: $color-rojizo;
+            background-color: $color-naranja;
         }
     }
 
     main{
-        background-color: $color-gold;
+        background-color: $color-rosaFuerte;
         
         .titulo{
-            h1{
-                text-shadow: $text-shadow;
-                font-size: 3.5rem;
-                font-weight: 700;
-                color: $color-rojizo;
+            div{
+                background-color: $color-clarito;
+                padding: 10px;
+                h1{
+                    text-shadow: $text-shadow;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    color: $color-marron;
+                }
             }
             h2{
+                margin-top: 25px;
                 text-shadow: $text-shadow;
                 font-size: 2rem;
                 font-weight: 700;
-                color: $color-rojizo;
+                color: $color-marron;
             }
             p{
-                color: $color-ivory;
+                color: $color-marron;
                 font-size: 18px;
                 text-shadow: $text-shadow-p;
             }
@@ -36,7 +41,7 @@
             div{
                 
                 .card-color{
-                    background-color: $color-ivory;
+                    background-color: $color-clarito;
                 }
                 h2{
                     font-weight: 500;
@@ -48,7 +53,7 @@
                     font-weight: 500;
                 }
                 .boton{
-                    background-color: $color-rojizo !important;
+                    background-color: $color-naranja !important;
                 }
             }
         }
@@ -56,7 +61,7 @@
 
     /*FOOTER*/
     footer{
-        background-color: $color-rojizo;
+        background-color: $color-naranja;
         .logos div{
             width: auto;
             height: 50px;

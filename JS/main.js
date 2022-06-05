@@ -1,47 +1,53 @@
+//Seleccione su país
+/* 
+alert("Seleccione un país de la siguiente lista: \n Argentina \n Chile \n México \n Canadá \n Estados Unidos ")
+
+let escribirPais = prompt("Escriba el país seleccionado")
+
+function elijaPais(pais){
+    
+    switch (pais) {
+        case "Argentina":
+            return "seleccionó Argentina";
+        case "Chile":
+            return "seleccionó Chile"
+        case "México":
+            return "Seleccionó México"
+        case "Canadá":
+            return "Seleccionó Canadá"
+        case "Estados Unidos":
+            return "Seleccionó Estados Unidos"
+        default:
+            return "Error. El país seleccionado no se encuentra en las opciones"
+    }
+}
+let resultado = elijaPais(escribirPais);
+alert(resultado) */
+
+
+
 //Nombre de usuario y contraseña
+function nombreUsuario(){
+    prompt("Ingrese nombre de usuario")
+}
+function contrasenia(){
+    prompt("Ingrese contraseña")
+}
 
-let nombreUsuario = prompt("Ingrese nombre de usuario")
-
-while (nombreUsuario == "" ) {
+nombreUsuario()
+while (nombreUsuario() == "" ) {
     alert ("Nombre ingresado no es valido");
-    nombreUsuario = prompt("Ingrese nombre de usuario")
+    nombreUsuario()
 }
 
-let contrasenia = prompt("Ingrese contraseña")
-while (contrasenia == "" ) {
+contrasenia()
+while (contrasenia() == "" ) {
     alert ("Contraseña ingresada no es valida");
-    contrasenia = prompt("Ingrese contraseña");
+    contrasenia()
 }
-if (nombreUsuario != "" && contrasenia != ""){
+
+if (nombreUsuario() != "" && contrasenia() != ""){
     alert ("Datos ingresados correctamente")
 } else {
     alert ("Los datos ingresados son invalidos")
-}
-
-
-//Seleccione su pais
-
-let entrada =  prompt("Seleccione su pais. \n Argentina \n Chile \n México \n Canadá \n Estados Unidos \n Para salir escriba ESC");
-let ingresados = '';
-while (entrada != 'ESC') {
-    switch (entrada) {
-        case "Argentina":
-            alert("Seleccionó Argentina");
-            break;
-        case "Chile":
-            alert("Seleccionó Chile");
-            break;
-        case "México":
-            alert("Seleccionó México ");
-            break;
-        case "Canadá":
-            alert("Seleccionó Canadá");
-            break;
-        case ("Estados Unidos"):
-            alert("Seleccionó Estados Unidos");
-        default:
-            alert("Error. Pais seleccionado no se encuentra en la lista");
-            break;
-    }
-    entrada =  prompt("Seleccione su pais. \n Argentina \n Chile \n México \n Canadá \n Estados Unidos \n Para salir escriba ESC");
 }

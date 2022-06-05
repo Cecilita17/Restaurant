@@ -2,25 +2,29 @@
   font-family: 'Indie Flower', cursive;
   /*FOOTER*/ }
   .container-fluid header nav {
-    background-color: #BB371A; }
+    background-color: #DEA057; }
   .container-fluid main {
-    background-color: #FFCE45; }
-    .container-fluid main .titulo h1 {
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-      font-size: 3.5rem;
-      font-weight: 700;
-      color: #BB371A; }
+    background-color: #FFE3A9; }
+    .container-fluid main .titulo div {
+      background-color: #FCFFE7;
+      padding: 10px; }
+      .container-fluid main .titulo div h1 {
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #CE9461; }
     .container-fluid main .titulo h2 {
+      margin-top: 25px;
       text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
       font-size: 2rem;
       font-weight: 700;
-      color: #BB371A; }
+      color: #CE9461; }
     .container-fluid main .titulo p {
-      color: #FFF8D9;
+      color: #CE9461;
       font-size: 18px;
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+      text-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.6); }
     .container-fluid main div div .card-color {
-      background-color: #FFF8D9; }
+      background-color: #FCFFE7; }
     .container-fluid main div div h2 {
       font-weight: 500; }
     .container-fluid main div div h3 {
@@ -28,9 +32,9 @@
     .container-fluid main div div h4 {
       font-weight: 500; }
     .container-fluid main div div .boton {
-      background-color: #BB371A !important; }
+      background-color: #DEA057 !important; }
   .container-fluid footer {
-    background-color: #BB371A; }
+    background-color: #DEA057; }
     .container-fluid footer .logos div {
       width: auto;
       height: 50px;
