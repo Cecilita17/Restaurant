@@ -1,5 +1,5 @@
 //Seleccione su país
-/* 
+
 alert("Seleccione un país de la siguiente lista: \n Argentina \n Chile \n México \n Canadá \n Estados Unidos ")
 
 let escribirPais = prompt("Escriba el país seleccionado")
@@ -22,31 +22,34 @@ function elijaPais(pais){
     }
 }
 let resultado = elijaPais(escribirPais);
-alert(resultado) */
+alert(resultado)
 
 
 
 //Nombre de usuario y contraseña
-function nombreUsuario(){
-    prompt("Ingrese nombre de usuario")
+
+function usuario(){
+    while (nombreUsuario == "" ) {
+        alert ("Nombre ingresado no es valido");
+        nombreUsuario = prompt("Ingrese nombre de usuario")
+    } 
 }
+ 
 function contrasenia(){
-    prompt("Ingrese contraseña")
+    while (ingreseContrasenia == "" ) {
+        alert ("Contraseña ingresada no es valida");
+        ingreseContrasenia = prompt("Ingrese contraseña")
+    }
 }
-
-nombreUsuario()
-while (nombreUsuario() == "" ) {
-    alert ("Nombre ingresado no es valido");
-    nombreUsuario()
-}
-
+ 
+let nombreUsuario = prompt("Ingrese nombre de usuario")
+usuario()
+let ingreseContrasenia = prompt("Ingrese contraseña")
 contrasenia()
-while (contrasenia() == "" ) {
-    alert ("Contraseña ingresada no es valida");
-    contrasenia()
-}
-
-if (nombreUsuario() != "" && contrasenia() != ""){
+ 
+ 
+ 
+if (nombreUsuario != "" && contrasenia != ""){
     alert ("Datos ingresados correctamente")
 } else {
     alert ("Los datos ingresados son invalidos")
