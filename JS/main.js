@@ -1,51 +1,35 @@
-/* //Carrito con array y prompt
-let entrada = prompt("Ingresar producto. \n Para continuar, escriba CONTINUAR");
-
-const compras = [];
-while (entrada != "CONTINUAR"){
-    compras.push(entrada);
-    entrada = prompt("Ingresar producto \n Para continuar, escriba CONTINUAR")
-}
-
-console.log(compras);
-
-
-function listaCompras(){
-    for (const elemento of compras) {
-        elemento += elemento.precio
-    }
-}
-
- */
-
-
-
-
 let ingProducto = prompt("Ingrese producto")
+let ingPrecio = prompt("Ingrese el precio")
 let ingNombre = prompt("Ingrese su nombre")
 let ingDireccion = prompt("Ingrese su direccion")
 let ingTelefono = prompt("Ingrese su telefono")
 
-function RealizarPedido (producto, nombre, direccion, telefono){
+function RealizarPedido (producto, precio, nombre, direccion, telefono){
     this.producto = producto;
-    this.nombre = nombre,
-    this.direccion = direccion,
+    this.precio = precio;
+    this.nombre = nombre;
+    this.direccion = direccion;
     this.telefono = telefono;
 }
 
-function nuevProd(producto, nombre, direccion, telefono){
-    let productoAgregado = new RealizarPedido(ingProducto, ingNombre, ingDireccion, ingTelefono)
-    return nuevProd;
-}
 
-const compras = [];
+let compras = [];
 for (let index = 0; index <3 ; index++) {
-    nuevProd(ingProducto, ingNombre, ingDireccion, ingTelefono);
-    compras.push(nuevProd);
-}
+    let ingProducto = prompt("Ingrese producto")
+    let ingPrecio = prompt("Ingrese el precio")
+    let ingNombre = prompt("Ingrese su nombre")
+    let ingDireccion = prompt("Ingrese su direccion")
+    let ingTelefono = prompt("Ingrese su telefono")
 
-function listaCompras(){
-    for (const elemento of compras) {
-        elemento += elemento.precio
-    }
+    let nuevoProducto= new RealizarPedido(ingProducto, ingPrecio, ingNombre, ingDireccion, ingTelefono);
+    compras.push(nuevoProducto);
+    
 }
+console.log(compras);
+
+
+const resultado1 = compras.filter((elemento) => elemento.producto.includes("fideos"))
+const resultado2 = compras.find((elemento) => elemento.precio <= 300)
+
+console.log(resultado1);
+console.log(resultado2);
