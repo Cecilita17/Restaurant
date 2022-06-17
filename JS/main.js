@@ -1,5 +1,6 @@
-//Carrito con array y prompt
+/* //Carrito con array y prompt
 let entrada = prompt("Ingresar producto. \n Para continuar, escriba CONTINUAR");
+
 const compras = [];
 while (entrada != "CONTINUAR"){
     compras.push(entrada);
@@ -8,7 +9,18 @@ while (entrada != "CONTINUAR"){
 
 console.log(compras);
 
-// Carrito con objeto - funcion constructora
+
+function listaCompras(){
+    for (const elemento of compras) {
+        elemento += elemento.precio
+    }
+}
+
+ */
+
+
+
+
 let ingProducto = prompt("Ingrese producto")
 let ingNombre = prompt("Ingrese su nombre")
 let ingDireccion = prompt("Ingrese su direccion")
@@ -21,6 +33,19 @@ function RealizarPedido (producto, nombre, direccion, telefono){
     this.telefono = telefono;
 }
 
-const uno = new RealizarPedido(ingProducto, ingNombre, ingDireccion, ingTelefono)
+function nuevProd(producto, nombre, direccion, telefono){
+    let productoAgregado = new RealizarPedido(ingProducto, ingNombre, ingDireccion, ingTelefono)
+    return nuevProd;
+}
 
-console.log(uno);
+const compras = [];
+for (let index = 0; index <3 ; index++) {
+    nuevProd(ingProducto, ingNombre, ingDireccion, ingTelefono);
+    compras.push(nuevProd);
+}
+
+function listaCompras(){
+    for (const elemento of compras) {
+        elemento += elemento.precio
+    }
+}
