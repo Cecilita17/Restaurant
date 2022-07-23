@@ -1,77 +1,265 @@
 .container-fluid {
-  font-family: 'Indie Flower', cursive;
-  /*FOOTER*/ }
-  .container-fluid header nav {
-    background-color: #DEA057; }
-  .container-fluid main {
-    background-color: #FFE3A9; }
-    .container-fluid main .titulo div {
-      background-color: #FCFFE7;
-      padding: 10px; }
-      .container-fluid main .titulo div h1 {
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #CE9461; }
-    .container-fluid main .titulo h2 {
-      margin-top: 25px;
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-      font-size: 2rem;
-      font-weight: 700;
-      color: #CE9461; }
-    .container-fluid main .titulo p {
-      color: #CE9461;
-      font-size: 18px;
-      text-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.6); }
-    .container-fluid main div div .card-color {
-      background-color: #FCFFE7; }
-    .container-fluid main div div h2 {
-      font-weight: 500; }
-    .container-fluid main div div h3 {
-      font-weight: 500; }
-    .container-fluid main div div h4 {
-      font-weight: 500; }
-    .container-fluid main div div .boton {
-      background-color: #DEA057 !important; }
-  .container-fluid footer {
-    background-color: #DEA057; }
-    .container-fluid footer .logos div {
-      width: auto;
-      height: 50px;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: none;
-      gap: 10px; }
-    .container-fluid footer h5 {
-      font-weight: 700; }
-    .container-fluid footer .fa-brands {
-      padding: 5px;
-      font-size: 20px;
-      width: 30px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 50%; }
-    .container-fluid footer .fa-facebook-f {
-      background: white;
-      color: black; }
-    .container-fluid footer .fa-instagram {
-      background: white;
-      color: black; }
-    .container-fluid footer .fa-whatsapp {
-      background: white;
-      color: black; }
-    .container-fluid footer .fa-tiktok {
-      background: white;
-      color: #0f0e0e; }
-    .container-fluid footer .fa-snapchat {
-      background: white;
-      color: black; }
-    .container-fluid footer .list-unstyled p {
-      margin-bottom: 1px; }
-
-* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2.1fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "footer"; }
+
+.container-fluid {
+  /*FOOTER*/ }
+  .container-fluid header {
+    grid-area: header;
+    height: 900px;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)), url(../img/pizza-2.png);
+    background-size: cover; }
+    .container-fluid header .divNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-inline-end: 15px;
+      border-bottom: 1px solid rgba(134, 132, 132, 0.5); }
+      .container-fluid header .divNav nav {
+        background-color: transparent; }
+        .container-fluid header .divNav nav ul {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 30px; }
+          .container-fluid header .divNav nav ul li {
+            list-style: none; }
+            .container-fluid header .divNav nav ul li a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: white;
+              font-size: 0.9rem;
+              font-weight: 600;
+              font-family: 'Jost', sans-serif; }
+              .container-fluid header .divNav nav ul li a .fa-angle-down {
+                font-size: 10px;
+                margin-left: 5px; }
+      .container-fluid header .divNav .logo {
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 600; }
+      .container-fluid header .divNav .navSocial .fa-facebook-f, .container-fluid header .divNav .navSocial .fa-instagram, .container-fluid header .divNav .navSocial .fa-snapchat, .container-fluid header .divNav .navSocial .fa-whatsapp, .container-fluid header .divNav .navSocial .fa-tiktok {
+        font-size: 17px;
+        font-weight: 600; }
+      .container-fluid header .divNav .navSocial .ordeneOl {
+        border: 2px solid white;
+        padding-inline: 10px; }
+    .container-fluid header .divTitle {
+      height: 600px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .container-fluid header .divTitle p {
+        color: #f6cf6e;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600; }
+        .container-fluid header .divTitle p span {
+          color: #f6cf6e;
+          margin-inline: 15px; }
+      .container-fluid header .divTitle h1 {
+        color: white;
+        font-size: 5rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 450px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 800; }
+      .container-fluid header .divTitle h2 {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem; }
+  .container-fluid main {
+    grid-area: main;
+    background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(0, 0, 0, 0.8)), url(../img/bg3.png);
+    background-attachment: fixed;
+    height: 3000px;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .container-fluid main .divRistorante {
+      height: 200px;
+      text-transform: uppercase;
+      text-align: center; }
+      .container-fluid main .divRistorante span {
+        color: #f6cf6e;
+        font-weight: 800;
+        margin-inline: 15px; }
+      .container-fluid main .divRistorante h2 {
+        font-family: 'Jost', sans-serif;
+        color: #f6cf6e;
+        font-size: 1.6rem;
+        font-weight: 700px; }
+      .container-fluid main .divRistorante h3 {
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        font-size: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; }
+        .container-fluid main .divRistorante h3:last-of-type {
+          font-family: 'Jost', sans-serif;
+          color: #f6cf6e;
+          font-size: 1rem;
+          align-items: center; }
+          .container-fluid main .divRistorante h3:last-of-type span {
+            color: #f6cf6e;
+            font-weight: 500;
+            margin-inline: 0; }
+        .container-fluid main .divRistorante h3 .fa-star {
+          font-size: 20px; }
+    .container-fluid main .sectionPizza {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-top: 50px; }
+      .container-fluid main .sectionPizza .pizzaNro {
+        display: flex;
+        flex-flow: row nowrap; }
+        .container-fluid main .sectionPizza .pizzaNro .pizzaDescript {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          padding-inline: 60px;
+          width: 492px;
+          height: 592px; }
+          .container-fluid main .sectionPizza .pizzaNro .pizzaDescript .pizzasT {
+            color: #e8e8e8;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            font-size: 40px; }
+          .container-fluid main .sectionPizza .pizzaNro .pizzaDescript p {
+            color: #c6c6c6;
+            font-family: 'Jost', sans-serif; }
+            .container-fluid main .sectionPizza .pizzaNro .pizzaDescript p:first-of-type {
+              color: #c6c6c6;
+              font-size: 28px;
+              font-family: 'Cormorant', serif; }
+          .container-fluid main .sectionPizza .pizzaNro .pizzaDescript .rectangle {
+            text-transform: uppercase;
+            font-family: 'Jost', sans-serif;
+            font-size: 14px;
+            border: 2px solid white;
+            padding: 3px 15px;
+            margin: 0px 45px 0px 0px; }
+          .container-fluid main .sectionPizza .pizzaNro .pizzaDescript .rectangle2 {
+            text-transform: uppercase;
+            font-family: 'Jost', sans-serif;
+            font-size: 14px;
+            border: 2px solid white;
+            padding: 3px 19px;
+            margin: 0px 45px 0px 0px; }
+  .container-fluid footer {
+    grid-area: footer;
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/footer.png);
+    width: auto;
+    height: 400px;
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .container-fluid footer .divFollow {
+      color: #ffffff;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .container-fluid footer .divFollow .icons {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px; }
+        .container-fluid footer .divFollow .icons a {
+          text-decoration: none; }
+          .container-fluid footer .divFollow .icons a .fa-brands {
+            padding: 13px;
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%; }
+          .container-fluid footer .divFollow .icons a .fa-facebook-f, .container-fluid footer .divFollow .icons a .fa-instagram, .container-fluid footer .divFollow .icons a .fa-whatsapp, .container-fluid footer .divFollow .icons a .fa-tiktok, .container-fluid footer .divFollow .icons a .fa-snapchat {
+            background: none;
+            color: #f6cf6e;
+            border: 2px solid #f6cf6e; }
+      .container-fluid footer .divFollow .fa-pizza-slice {
+        font-size: 80px; }
+      .container-fluid footer .divFollow .follow, .container-fluid footer .divFollow .address {
+        font-family: 'Cormorant', serif;
+        font-size: 28px;
+        margin-bottom: 7px; }
+      .container-fluid footer .divFollow p {
+        font-size: 20px;
+        font-family: 'Cormorant Garamond', serif;
+        margin-bottom: 0; }
+    .container-fluid footer .divHours1 {
+      color: #ffffff; }
+      .container-fluid footer .divHours1 p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 28px;
+        text-align: center; }
+      .container-fluid footer .divHours1 .divHours2 {
+        font-family: 'Cormorant', serif;
+        font-size: 20px;
+        display: flex;
+        gap: 30px;
+        text-align: end; }
+        .container-fluid footer .divHours1 .divHours2 .divDays, .container-fluid footer .divHours1 .divHours2 .divTime {
+          display: flex;
+          flex-flow: column nowrap; }
+    .container-fluid footer .divContact {
+      color: #ffffff;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      height: 350px; }
+      .container-fluid footer .divContact p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 28px; }
+      .container-fluid footer .divContact .form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 290px;
+        font-family: 'Cormorant', serif;
+        font-size: 20px; }
+        .container-fluid footer .divContact .form .input-wrap {
+          width: 210px;
+          height: 40px; }
+        .container-fluid footer .divContact .form .input-message {
+          width: 210px;
+          height: 120px; }
+        .container-fluid footer .divContact .form .button {
+          background-color: #f6cf6e;
+          border-radius: 2px;
+          border: none;
+          padding: 10px 25px; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2.1fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "footer"; }

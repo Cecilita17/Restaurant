@@ -1,125 +1,315 @@
 @import "utilities/variables";
+@import "./layout/grids";
 
 .container-fluid {
     
-    font-family: 'Indie Flower', cursive;
-    
     header{
-        nav{
-            background-color: $color-naranja;
-        }
-    }
-
-    main{
-        background-color: $color-rosaFuerte;
-        
-        .titulo{
-            div{
-                background-color: $color-clarito;
-                padding: 10px;
-                h1{
-                    text-shadow: $text-shadow;
-                    font-size: 3.5rem;
-                    font-weight: 700;
-                    color: $color-marron;
+        grid-area: header;
+        height: 900px;
+        width: auto;
+        background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)), url(../img/pizza-2.png);
+        background-size: cover;
+        .divNav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-inline-end: 15px;
+            border-bottom: 1px solid rgba(134, 132, 132, 0.5);
+            nav{
+                background-color: transparent;
+                ul{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap: 30px;
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: white;
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            font-family: 'Jost', sans-serif;
+                            .fa-angle-down{
+                                font-size: 10px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
                 }
+            }
+            .logo{
+                color: white;
+                font-size: 3.5rem;
+                font-weight: 600;
+            }
+            .navSocial{
+                .fa-facebook-f, .fa-instagram, .fa-snapchat, .fa-whatsapp, .fa-tiktok{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                .ordeneOl{
+                    border: 2px solid white;
+                    padding-inline: 10px;
+                }
+            }
+        }
+        .divTitle{
+            height: 600px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            p{
+                color: rgb(246, 207, 110);
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                span{
+                    color: rgb(246, 207, 110);
+                    margin-inline: 15px;
+                }
+            }
+            h1{
+                color: white;
+                font-size: 5rem;
+                text-transform: uppercase;
+                text-align: center;
+                width: 450px;
+                font-family: 'Cormorant Garamond', serif;
+                font-weight: 800;
             }
             h2{
-                margin-top: 25px;
-                text-shadow: $text-shadow;
-                font-size: 2rem;
-                font-weight: 700;
-                color: $color-marron;
-            }
-            p{
-                color: $color-marron;
-                font-size: 18px;
-                text-shadow: $text-shadow-p;
+                color: white;
+                text-align: center;
+                font-size: 1.2rem;
             }
         }
-        div{
-            div{
+    }
+    main{
+        grid-area: main;
+        background:linear-gradient(rgba(0, 0, 0, 0.927),rgba(0, 0, 0, 0.8)), url(../img/bg3.png);
+        background-attachment: fixed;
+        height: 3000px;
+        width: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        .divRistorante{
+            height: 200px;
+            text-transform: uppercase;
+            text-align: center;
+            span{
+                color: rgb(246, 207, 110);
+                font-weight: 800;
+                margin-inline: 15px;
+            }
+            h2{
+                font-family: 'Jost', sans-serif;
+                color: rgb(246, 207, 110);
+                font-size: 1.6rem;
+                font-weight: 700px;
+            }
+            h3{
+                font-family: 'Cormorant Garamond', serif;
+                color: white;
+                font-size: 4.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
                 
-                .card-color{
-                    background-color: $color-clarito;
+                &:last-of-type{
+                    font-family: 'Jost', sans-serif;
+                    color: rgb(246, 207, 110);
+                    font-size: 1rem;
+                    align-items: center;
+                    span{
+                        color: rgb(246, 207, 110);
+                        font-weight: 500;
+                        margin-inline: 0;
+                    }
                 }
-                h2{
-                    font-weight: 500;
+                .fa-star{
+                    font-size: 20px;
                 }
-                h3{
-                    font-weight: 500;
-                }
-                h4{
-                    font-weight: 500;
-                }
-                .boton{
-                    background-color: $color-naranja !important;
+                
+            }
+        }
+
+        .sectionPizza{
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: 50px;
+            .pizzaNro{
+                display: flex;
+                flex-flow: row nowrap;
+                
+                .pizzaDescript{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    padding-inline: 60px;
+                    width: 492px;
+                    height: 592px;
+                    .pizzasT{
+                        color: #e8e8e8;
+                        font-family: 'Cormorant Garamond', serif;
+                        font-weight: 600;
+                        font-size: 40px;
+                    }
+                    p{
+                        color: #c6c6c6;
+                        font-family: 'Jost', sans-serif;
+                        &:first-of-type{
+                            color: #c6c6c6;
+                            font-size: 28px;
+                            font-family: 'Cormorant', serif;
+                        }
+                    }
+
+                    .rectangle{
+                        text-transform: uppercase;
+                        font-family: 'Jost', sans-serif;
+                        font-size: 14px;
+                        border: 2px solid white;
+                        padding: 3px 15px;
+                        margin: 0px 45px 0px 0px;
+                        
+                    }
+                    .rectangle2{
+                        text-transform: uppercase;
+                        font-family: 'Jost', sans-serif;
+                        font-size: 14px;
+                        border: 2px solid white;
+                        padding: 3px 19px;
+                        margin: 0px 45px 0px 0px;
+                    }
                 }
             }
         }
     }
-
     /*FOOTER*/
     footer{
-        background-color: $color-naranja;
-        .logos div{
-            width: auto;
-            height: 50px;
-            list-style: none;
+        grid-area: footer;
+        background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../img/footer.png);
+        width: auto;
+        height: 400px;
+        padding-top: 40px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .divFollow{
+            color: #ffffff;
             display: flex;
+            flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            background-color: none;
             gap: 10px;
+
+            .icons{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                    .fa-brands {
+                        padding: 13px;
+                        font-size: 20px;
+                        width: 50px;
+                        text-align: center ;
+                        text-decoration: none;
+                        border-radius: 50%;
+                    }
+                    .fa-facebook-f, .fa-instagram, .fa-whatsapp, .fa-tiktok, .fa-snapchat{
+                        background:none;
+                        color: rgb(246, 207, 110);
+                        border: 2px solid rgb(246, 207, 110);
             
+                    }
+                }
+            }
             
+            .fa-pizza-slice{
+                font-size: 80px;
+            }
+            .follow, .address{
+                font-family: 'Cormorant', serif;
+                font-size: 28px;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 20px;
+                font-family: 'Cormorant Garamond', serif;
+                margin-bottom: 0;
+            }
+        }
+        .divHours1{
+            color: #ffffff;
+            p{
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 28px;
+                text-align: center;
+            }
+            .divHours2{
+                font-family: 'Cormorant', serif;
+                font-size: 20px;
+                display: flex;
+                gap: 30px;
+                text-align: end;
+                .divDays, .divTime{
+                    display: flex;
+                    flex-flow: column nowrap;
+                }
+            }
+        }
+        .divContact{
+            color: #ffffff;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 350px;
+            p{
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 28px;
+            }
+            .form{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 290px;
+                font-family: 'Cormorant', serif;
+                font-size: 20px;
+                .input-wrap{
+                    width: 210px;
+                    height: 40px;
+
+                }
+                .input-message{
+                    width: 210px;
+                    height: 120px;
+                }
+                .button{
+                    background-color: rgb(246, 207, 110);
+                    border-radius: 2px ;
+                    border: none;
+                    padding: 10px 25px;
+                }
+            }
+        }
         
-        }
     
-        h5{
-            font-weight: 700;
-        }
-    
-        .fa-brands{
-            padding: 5px;
-            font-size: 20px;
-            width: 30px;
-            text-align: center ;
-            text-decoration: none;
-            border-radius: 50%;
-            
-        }
-    
-        .fa-facebook-f {
-            background: white;
-            color: black;
-        }
-    
-        .fa-instagram {
-            background: white;
-            color: black;
-        }
-    
-        .fa-whatsapp {
-            background: white;
-            color: black;
-        }
-    
-        .fa-tiktok {
-            background: white;
-            color: rgb(15, 14, 14);
-        }
-    
-        .fa-snapchat {
-            background:white;
-            color: black;
-            
-        }
-    
-    
-        .list-unstyled p{
-            margin-bottom: 1px;
-        }
+        
+        
     }
     
 }
